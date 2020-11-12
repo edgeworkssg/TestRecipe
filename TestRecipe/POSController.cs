@@ -46,7 +46,7 @@ namespace TestRecipe
                 string sql = @"
                 SELECT *
                 FROM Item
-                WHERE	CategoryName = 'Product' AND ItemNo = @ItemNo";
+                WHERE ItemNo = @ItemNo";
 
                 QueryCommand cmd = new QueryCommand(sql);
                 cmd.AddParameter("@ItemNo", itemNo);
